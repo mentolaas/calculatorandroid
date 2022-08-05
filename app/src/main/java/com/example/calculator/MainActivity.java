@@ -68,12 +68,17 @@ public class MainActivity extends AppCompatActivity {
                 } else if (number2.length() == 0) {
                     number2 = "";
                 } else {
-                    Calculate calculate = new Calculate();
-                    Calc.setText(String.valueOf(calculate.Calculating(Integer.valueOf(number1), Integer.valueOf(number2), operation)));
-                    calc = String.valueOf(calculate.Calculating(Integer.valueOf(number1), Integer.valueOf(number2), operation));
-                    number1 = String.valueOf(calculate.Calculating(Integer.valueOf(number1), Integer.valueOf(number2), operation));
-                    number2 = "";
-                    operation = "";
+                    try {
+                        Calculate calculate = new Calculate();
+                        Calc.setText(String.valueOf(calculate.Calculating(Long.valueOf(number1), Long.valueOf(number2), operation)));
+                        calc = String.valueOf(calculate.Calculating(Long.valueOf(number1), Long.valueOf(number2), operation));
+                        number1 = String.valueOf(calculate.Calculating(Long.valueOf(number1), Long.valueOf(number2), operation));
+                        number2 = "";
+                        operation = "";
+                    } catch(Exception e) {
+                        calc = "Ошибка";
+                        Calc.setText(calc);
+                    }
                 }
             }
         });
@@ -81,6 +86,15 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "1";
@@ -101,6 +115,15 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "2";
@@ -121,6 +144,15 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "3";
@@ -140,6 +172,15 @@ public class MainActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "4";
@@ -159,6 +200,15 @@ public class MainActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "5";
@@ -178,6 +228,15 @@ public class MainActivity extends AppCompatActivity {
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "6";
@@ -197,6 +256,15 @@ public class MainActivity extends AppCompatActivity {
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "7";
@@ -216,6 +284,15 @@ public class MainActivity extends AppCompatActivity {
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "8";
@@ -235,6 +312,15 @@ public class MainActivity extends AppCompatActivity {
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "9";
@@ -254,6 +340,15 @@ public class MainActivity extends AppCompatActivity {
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (operation.length() == 0)
                 {
                     number1 = number1 + "0";
@@ -273,6 +368,15 @@ public class MainActivity extends AppCompatActivity {
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (number1.length() == 0) {
                     operation = "";
                 } else {
@@ -286,6 +390,15 @@ public class MainActivity extends AppCompatActivity {
         btnMin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (number1.length() == 0) {
                     operation = "";
                 } else {
@@ -299,6 +412,15 @@ public class MainActivity extends AppCompatActivity {
         btnDivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    calc = "";
+                    number1 = "";
+                    number2 = "";
+                    operation = "";
+                    Calc.setText(calc);
+                }
+
                 if (number1.length() == 0) {
                     operation = "";
                 } else {
@@ -312,6 +434,12 @@ public class MainActivity extends AppCompatActivity {
         btnMulti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (Calc.getText() == "Ошибка") {
+                    Calc.setText("");
+                    calc = "";
+                }
+
                 if (number1.length() == 0) {
                     operation = "";
                 } else {
@@ -325,6 +453,7 @@ public class MainActivity extends AppCompatActivity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 calc = "";
                 number1 = "";
                 number2 = "";
